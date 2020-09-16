@@ -1,0 +1,108 @@
+body {
+  background: black;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container-carousel {
+  width: 80%;
+  margin: 2.5% auto;
+}
+
+.container-carousel .carousel {
+  border: solid #32ff90 2px;
+  height: 90vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.container-carousel .carousel .control .arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.container-carousel .carousel .control .arrow.right {
+  right: 10px;
+  font-size: 2rem;
+}
+
+.container-carousel .carousel .control .arrow.left {
+  left: 10px;
+  font-size: 2rem;
+}
+
+.container-carousel .carousel .control ul {
+  position: absolute;
+  bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  padding: 0%;
+  margin: 0%;
+}
+
+.container-carousel .carousel .control ul li {
+  height: 10px;
+  width: 10px;
+  border: 2px solid #fff;
+  list-style: none;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 0%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.container-carousel .carousel .control ul li.selected {
+  background-color: transparent;
+}
+
+.container-carousel .slider {
+  width: 400%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.container-carousel .slider section {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  font-size: 20px;
+  overflow: hidden;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid red 2px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000028), to(#002814));
+  background: linear-gradient(#000028, #002814);
+}
+
+.container-carousel .slider section:nth-child(2n) {
+  background-color: aqua;
+  background: black;
+}
+/*# sourceMappingURL=main.css.map */
